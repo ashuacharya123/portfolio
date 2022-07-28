@@ -11,6 +11,7 @@ $bg__hero: #0e0e0e;
     width: 100%;
     background-size: contain;
     background-image: url(../../assets/mobile/hero.png);
+    background-attachment: fixed;
     height: 100%;
     background-repeat: no-repeat;
     background-color: $bg__hero;

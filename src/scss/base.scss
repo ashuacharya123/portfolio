@@ -52,15 +52,19 @@ body {
       &:nth-child(1) {
       }
       &:nth-child(2) {
+        background-attachment: fixed;
         background-image: url(../assets/mobile/about.png);
       }
       &:nth-child(3) {
+        background-attachment: fixed;
         background-image: url(../assets/mobile/skills.png);
       }
       &:nth-child(4) {
+        background-attachment: fixed;
         background-image: url(../assets/mobile/projects.png);
       }
       &:nth-child(5) {
+        background-attachment: fixed;
         background-image: url(../assets/mobile/contact.png);
       }
     }
