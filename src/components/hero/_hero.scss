@@ -1,0 +1,48 @@
+@import "./n.module";
+
+$bg__hero: #0e0e0e;
+
+.inactive {
+  color: #8b8b8b;
+}
+
+.hero__container {
+  &__content {
+    width: 100%;
+    background-size: contain;
+    background-image: url(../../assets/mobile/hero.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: $bg__hero;
+
+    &__whee {
+      position: fixed;
+      top: -16rem;
+      left: 12vw;
+    }
+
+    &__wheel {
+      margin: 5rem auto 0;
+      border: solid 1px $color__wheel;
+      transition: all 0.4s;
+
+      li {
+        display: block;
+        max-width: 100%;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        // border: solid 5px tomato;
+        transition: 0.5s;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        &:hover,
+        &:active {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
+
+$rot: 45;
