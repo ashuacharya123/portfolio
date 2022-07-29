@@ -58,8 +58,9 @@ body {
 
       &:nth-child(1) {
       }
-      &:nth-child(2) {
-      }
+      // &:nth-last-of-type(2) {
+      //   height: 200vh;
+      // }
       &:nth-child(3) {
         background-attachment: fixed;
         background-image: url(../assets/mobile/blur.png);

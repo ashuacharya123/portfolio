@@ -133,12 +133,10 @@ const Hero: React.FC<{}> = () => {
           <li>Full stack web developer</li>
           <li>UI UX designer</li>
         </p>
-        <button className="hero__container__content__button u-ml u-btn">
-          <a href="#projects" className="u-text-decoration-none">
-            <span>Have a look</span>
-            <img src={roundArrow} alt="arrow" />
-          </a>
-        </button>
+        <a href="#projects" className="u-text-decoration-none u-ml" id="a">
+          <span>Have a look</span>
+          <img src={roundArrow} alt="arrow" />
+        </a>
         <div className="hero__container__content__links u-ml">
           <a href="https://www.facebook.com/iamashuacharya" target="_blank">
             <img src={facebook} alt="facebook" />

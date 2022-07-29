@@ -109,6 +109,7 @@ $bg__hero: #0e0e0e;
       margin-left: 3.5rem;
       font-size: 1.2rem;
       position: relative;
+      margin-bottom: 4rem;
       li {
         list-style: none;
       }
@@ -123,8 +124,8 @@ $bg__hero: #0e0e0e;
       }
     }
 
-    &__button {
-      margin-top: 4rem;
+    #a {
+      width: 18rem;
       border: none;
       border-radius: 0.6rem;
       padding: 1rem 4rem 1rem 4rem;
@@ -132,18 +133,17 @@ $bg__hero: #0e0e0e;
       font-size: 1.2rem;
       font-weight: 400;
       transition: all 0.1s;
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-      }
+      background: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         transform: scale(0.8);
         margin-left: 0.5rem;
       }
     }
+
     &__links {
       margin-top: 2rem;
       list-style: none;
