@@ -48,7 +48,7 @@ const Hero: React.FC<{}> = () => {
   useEffect(() => {
     window.setTimeout(() => {
       setDn(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (

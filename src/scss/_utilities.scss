@@ -10,6 +10,7 @@
 }
 
 .u-btn {
+  transition: all 0.2s;
   &:hover {
     transform: scale(1.012);
   }
