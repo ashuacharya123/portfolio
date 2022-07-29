@@ -10,7 +10,7 @@ import mongodb from "../../assets/skills/mongodb.svg";
 
 const Skills: React.FC<{}> = () => {
   return (
-    <div className="container skills__container">
+    <div className="container skills__container" id="skills">
       <div className="skills__container__content">
         <h2 className="skills__container__content__heading">My skills</h2>
         <ul>

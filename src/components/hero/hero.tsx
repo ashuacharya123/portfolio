@@ -53,7 +53,7 @@ const Hero: React.FC<{}> = () => {
 
   return (
     <div className="container hero__container" id="num">
-      <div className="hero__container__content">
+      <div className="hero__container__content" id="home">
         <div className="hero__container__content__logo">
           <img src={logo} alt="" />
         </div>
@@ -93,17 +93,17 @@ const Hero: React.FC<{}> = () => {
             </div>
             <p>About</p>
           </a>
-          <a href="#projects" id={num === "three" ? "active" : ""}>
-            <div className="">
-              <img src={airplay} alt="projects" />
-            </div>
-            <p>Projects</p>
-          </a>
-          <a href="#skills" id={num === "four" ? "active" : ""}>
+          <a href="#skills" id={num === "three" ? "active" : ""}>
             <div className="">
               <img src={skills} alt="skills" />
             </div>
             <p>Skills</p>
+          </a>
+          <a href="#projects" id={num === "four" ? "active" : ""}>
+            <div className="">
+              <img src={airplay} alt="projects" />
+            </div>
+            <p>Projects</p>
           </a>
           <a
             href="#contact"
