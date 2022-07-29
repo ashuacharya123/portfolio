@@ -44,6 +44,13 @@ $bg__hero: #0e0e0e;
         }
       }
     }
+
+    &__logo {
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
 
@@ -58,7 +65,7 @@ $bg__hero: #0e0e0e;
   background-repeat: no-repeat;
 
   background-size: contain;
-  transition: all 0.5s;
+  transition: all 1s;
   h3 {
     font-size: 1.6rem;
     font-weight: 400;

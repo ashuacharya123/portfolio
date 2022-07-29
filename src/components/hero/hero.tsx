@@ -3,7 +3,7 @@ import logo from "../../assets/Logo.svg";
 
 const Hero: React.FC<{}> = () => {
   const [num, setNum] = useState<string>("one");
-  const [dn, setDn] = useState<boolean>(false);
+  const [dn, setDn] = useState<boolean>(true);
   const [move, setMove] = useState<number>(0);
 
   const [sound, setSound] = useState<boolean>(true);
@@ -38,10 +38,18 @@ const Hero: React.FC<{}> = () => {
 
   console.log(num);
 
+  useEffect(() => {
+    window.setTimeout(() => {
+      setDn(false);
+    }, 1000);
+  }, []);
+
   return (
     <div className="container hero__container" id="num">
       <div className="hero__container__content">
-        <img src={logo} alt="" />
+        <div className="hero__container__content__logo">
+          <img src={logo} alt="" />
+        </div>
         <div className="audio-enable" id={dn ? "dn" : ""}>
           <h3 className="audio-enable__text">Continue with sound ?</h3>
           <div>
