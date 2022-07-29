@@ -2,9 +2,11 @@ import React, { useState, useLayoutEffect, useEffect } from "react";
 import logo from "../../assets/Logo.svg";
 
 const Hero: React.FC<{}> = () => {
-  const [num, setNum] = useState<string>("five");
-
+  const [num, setNum] = useState<string>("one");
+  const [dn, setDn] = useState<boolean>(false);
   const [move, setMove] = useState<number>(0);
+
+  const [sound, setSound] = useState<boolean>(true);
 
   useLayoutEffect(() => {
     const app: any = document.querySelector(".App__container");
@@ -26,10 +28,40 @@ const Hero: React.FC<{}> = () => {
       : setNum("five");
   }, [move]);
 
+  useEffect(() => {
+    const audio = require("../../assets/click.mp3");
+    const htmlaudio: HTMLAudioElement = new Audio(audio);
+    if (sound === true) {
+      htmlaudio.play();
+    }
+  }, [num]);
+
+  console.log(num);
+
   return (
     <div className="container hero__container" id="num">
       <div className="hero__container__content">
         <img src={logo} alt="" />
+        <div className="audio-enable" id={dn ? "dn" : ""}>
+          <h3 className="audio-enable__text">Continue with sound ?</h3>
+          <div>
+            <button
+              onClick={() => {
+                setSound(false);
+                setDn(true);
+              }}
+            >
+              No
+            </button>
+            <button
+              onClick={() => {
+                setDn(true);
+              }}
+            >
+              Yes
+            </button>
+          </div>
+        </div>
         <div className="hero__container__content__whee">
           <div className="hero__container__content__wheel" id={num}>
             <li className="list">5</li>

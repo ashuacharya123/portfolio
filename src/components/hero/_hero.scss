@@ -18,8 +18,9 @@ $bg__hero: #0e0e0e;
 
     &__whee {
       position: fixed;
-      top: -16rem;
-      left: 12vw;
+      top: -17rem;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
 
     &__wheel {
@@ -46,4 +47,38 @@ $bg__hero: #0e0e0e;
   }
 }
 
-$rot: 45;
+.audio-enable {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: black;
+  background-image: url(../../assets/bg.jpg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  transition: all 0.5s;
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 20rem;
+  }
+
+  div {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    button {
+      border: none;
+      background: #ffffff;
+      padding: 1rem 3rem 1rem 3rem;
+      font-family: inherit;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
