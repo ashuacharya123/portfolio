@@ -61,6 +61,7 @@ const Hero: React.FC<{}> = () => {
           <h3 className="audio-enable__text">Continue with sound ?</h3>
           <div>
             <button
+              className="u-btn"
               onClick={() => {
                 setSound(false);
                 setDn(true);
@@ -69,6 +70,7 @@ const Hero: React.FC<{}> = () => {
               No
             </button>
             <button
+              className="u-btn"
               onClick={() => {
                 setDn(true);
               }}
@@ -131,7 +133,7 @@ const Hero: React.FC<{}> = () => {
           <li>Full stack web developer</li>
           <li>UI UX designer</li>
         </p>
-        <button className="hero__container__content__button u-ml">
+        <button className="hero__container__content__button u-ml u-btn">
           <a href="#projects" className="u-text-decoration-none">
             <span>Have a look</span>
             <img src={roundArrow} alt="arrow" />

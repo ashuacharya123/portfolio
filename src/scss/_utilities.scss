@@ -8,3 +8,13 @@
 .u-text-decoration-none {
   text-decoration: none;
 }
+
+.u-btn {
+  &:hover {
+    transform: scale(1.012);
+  }
+  &:active,
+  &:target {
+    transform: scale(1-0.015);
+  }
+}
