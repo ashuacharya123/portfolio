@@ -3,6 +3,7 @@
 @import url(../components/contact/_contact.scss);
 @import url(../components/projects/_projects.scss);
 @import url(../components/skills/_skills.scss);
+@import url(./_utilities.scss);
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
@@ -41,13 +42,12 @@ body {
   &__container {
     width: 100%;
     height: 100%;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     overflow-y: scroll;
 
     .container {
       scroll-snap-align: start;
       height: 100vh;
-      text-align: center;
 
       background-repeat: no-repeat;
       background-size: cover;

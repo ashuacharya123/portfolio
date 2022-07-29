@@ -6,6 +6,18 @@ $bg__hero: #0e0e0e;
   color: #8b8b8b;
 }
 
+#active {
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    position: absolute;
+    top: -1.3rem;
+    background: rgb(231, 84, 84);
+  }
+}
+
 .hero__container {
   &__content {
     width: 100%;
@@ -15,6 +27,29 @@ $bg__hero: #0e0e0e;
     height: 100%;
     background-repeat: no-repeat;
     background-color: $bg__hero;
+
+    &__menu {
+      background-color: #000000;
+      height: 5rem;
+      width: 100%;
+      border-top: 0.5px solid white;
+      list-style: none;
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: white;
+        text-decoration: none;
+        transform: scale(0.9);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    }
 
     &__whee {
       position: fixed;
@@ -26,7 +61,6 @@ $bg__hero: #0e0e0e;
     &__wheel {
       margin: 5rem auto 0;
       border: solid 1px $color__wheel;
-      transition: all 0.4s;
 
       li {
         display: block;
@@ -37,6 +71,7 @@ $bg__hero: #0e0e0e;
         transition: 0.5s;
         font-size: 1.5rem;
         font-weight: 400;
+        transition: all 0.15s;
 
         &:hover,
         &:active {
@@ -50,6 +85,68 @@ $bg__hero: #0e0e0e;
       top: 1rem;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+
+    &__heading {
+      padding-top: 12rem;
+      text-align: start;
+      font-weight: 500;
+      font-size: 4.5rem;
+      line-height: 4rem;
+
+      span {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 3rem;
+      }
+    }
+    &__paragraph {
+      margin-top: 2rem;
+      margin-left: 3.5rem;
+      font-size: 1.2rem;
+      position: relative;
+      li {
+        list-style: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0.6rem;
+        height: 100%;
+        background-color: #2d2c2a;
+        left: -1.5rem;
+      }
+    }
+
+    &__button {
+      margin-top: 4rem;
+      border: none;
+      border-radius: 0.6rem;
+      padding: 1rem 4rem 1rem 4rem;
+      font-family: inherit;
+      font-size: 1.2rem;
+      font-weight: 400;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      img {
+        transform: scale(0.8);
+        margin-left: 0.5rem;
+      }
+    }
+    &__links {
+      margin-top: 2rem;
+      list-style: none;
+      display: flex;
+      a {
+        margin-right: 2rem;
+      }
     }
   }
 }
@@ -70,6 +167,7 @@ $bg__hero: #0e0e0e;
     font-size: 1.6rem;
     font-weight: 400;
     margin-top: 20rem;
+    text-align: center;
   }
 
   div {

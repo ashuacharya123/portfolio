@@ -1,8 +1,17 @@
 import React, { useState, useLayoutEffect, useEffect } from "react";
 import logo from "../../assets/Logo.svg";
+import roundArrow from "../../assets/arrow-right-circle.svg";
+import facebook from "../../assets/facebook.svg";
+import github from "../../assets/github.svg";
+import instagram from "../../assets/instagram.svg";
+import home from "../../assets/home.svg";
+import award from "../../assets/award.svg";
+import airplay from "../../assets/airplay.svg";
+import skills from "../../assets/skills.svg";
+import contact from "../../assets/contact.svg";
 
 const Hero: React.FC<{}> = () => {
-  const [num, setNum] = useState<string>("one");
+  const [num, setNum] = useState<string>("five");
   const [dn, setDn] = useState<boolean>(true);
   const [move, setMove] = useState<number>(0);
 
@@ -36,8 +45,6 @@ const Hero: React.FC<{}> = () => {
     }
   }, [num]);
 
-  console.log(num);
-
   useEffect(() => {
     window.setTimeout(() => {
       setDn(false);
@@ -70,6 +77,44 @@ const Hero: React.FC<{}> = () => {
             </button>
           </div>
         </div>
+
+        <div className="hero__container__content__menu">
+          <a href="#home" className="u-ml" id={num === "one" ? "active" : ""}>
+            <div>
+              <img src={home} alt="home" />
+            </div>
+            <p>Home</p>
+          </a>
+          <a href="#about" id={num === "two" ? "active" : ""}>
+            <div className="">
+              <img src={award} alt="about" />
+            </div>
+            <p>About</p>
+          </a>
+          <a href="#projects" id={num === "three" ? "active" : ""}>
+            <div className="">
+              <img src={airplay} alt="projects" />
+            </div>
+            <p>Projects</p>
+          </a>
+          <a href="#skills" id={num === "four" ? "active" : ""}>
+            <div className="">
+              <img src={skills} alt="skills" />
+            </div>
+            <p>Skills</p>
+          </a>
+          <a
+            href="#contact"
+            className="u-mr"
+            id={num === "five" ? "active" : ""}
+          >
+            <div className="">
+              <img src={contact} alt="contact" />
+            </div>
+            <p>Contact</p>
+          </a>
+        </div>
+
         <div className="hero__container__content__whee">
           <div className="hero__container__content__wheel" id={num}>
             <li className="list">5</li>
@@ -78,6 +123,30 @@ const Hero: React.FC<{}> = () => {
             <li className="list">2</li>
             <li className="list">1</li>
           </div>
+        </div>
+        <h1 className="hero__container__content__heading u-ml">
+          <span>I make </span>Beautiful websites
+        </h1>
+        <p className="hero__container__content__paragraph ">
+          <li>Full stack web developer</li>
+          <li>UI UX designer</li>
+        </p>
+        <button className="hero__container__content__button u-ml">
+          <a href="#projects" className="u-text-decoration-none">
+            <span>Have a look</span>
+            <img src={roundArrow} alt="arrow" />
+          </a>
+        </button>
+        <div className="hero__container__content__links u-ml">
+          <a href="https://www.facebook.com/iamashuacharya" target="_blank">
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a href="https://github.com/ashuacharya123" target="_blank">
+            <img src={github} alt="github" />
+          </a>
+          <a href="https://www.instagram.com/iamashuacharya/" target="_blank">
+            <img src={instagram} alt="instagram" />
+          </a>
         </div>
       </div>
     </div>
