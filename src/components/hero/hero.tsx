@@ -117,7 +117,10 @@ const Hero: React.FC<{}> = () => {
           </a>
         </div>
 
-        <div className="hero__container__content__whee">
+        <div
+          className="hero__container__content__whee "
+          id={move >= 3 ? "u-bg-black" : ""}
+        >
           <div className="hero__container__content__wheel" id={num}>
             <li className="list">5</li>
             <li className="list">4</li>

@@ -1,0 +1,106 @@
+.projects__container {
+  &__content {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url(../../assets/mobile/projects.png);
+    overflow-y: scroll;
+    &__heading {
+      padding-top: 13rem;
+      font-size: 5rem;
+      text-align: center;
+      font-weight: 600;
+      -webkit-text-stroke: 1px white;
+      animation: on-off 5s infinite;
+      color: transparent;
+    }
+
+    &__card__container {
+      &__card {
+        width: 17.5rem;
+        margin-inline: auto;
+        margin-bottom: 8rem;
+        border: 1px solid white;
+        border-top: none;
+        text-align: center;
+        position: relative;
+
+        &:nth-of-type(1) {
+          margin-top: 5rem;
+        }
+        &:nth-last-of-type(1) {
+          margin-bottom: 15rem;
+        }
+
+        &::before {
+          content: "";
+          display: block;
+          background-image: url(../../assets/projects/card.svg);
+
+          width: 100%;
+
+          height: 100%;
+          position: absolute;
+          background-repeat: no-repeat;
+        }
+
+        &::after {
+          content: attr(data-before-content);
+          display: block;
+          font-weight: 600;
+          font-size: 1.5rem;
+
+          background-image: url(../../assets/projects/semiCircle.svg);
+          background-position: center;
+          width: 100%;
+          top: -2.5rem;
+          height: 20%;
+          position: absolute;
+          background-repeat: no-repeat;
+          color: black;
+          padding-top: 1rem;
+        }
+        &__details {
+          padding-top: 8rem;
+        }
+
+        &__image {
+          margin-top: 1rem;
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: black;
+          background-color: white;
+          margin: 1rem;
+          padding: 0.5rem 0 0.5rem 0;
+          border-radius: 0.3rem;
+
+          span {
+          }
+          img {
+            transform: scale(0.8);
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes on-off {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+  }
+  50% {
+    color: white;
+    -webkit-text-stroke: 1px transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+}
