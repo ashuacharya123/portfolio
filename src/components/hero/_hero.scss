@@ -27,6 +27,8 @@ $bg__hero: #0e0e0e;
     height: 100%;
     background-repeat: no-repeat;
     background-color: $bg__hero;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     &__menu {
       background-color: #000000;
@@ -148,6 +150,7 @@ $bg__hero: #0e0e0e;
       margin-top: 2rem;
       list-style: none;
       display: flex;
+      margin-bottom: 8rem;
       a {
         margin-right: 2rem;
       }
