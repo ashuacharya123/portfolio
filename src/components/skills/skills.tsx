@@ -14,49 +14,49 @@ const Skills: React.FC<{}> = () => {
       <div className="skills__container__content">
         <h2 className="skills__container__content__heading">My skills</h2>
         <ul>
-          <li>
+          <li className="u-btn">
             <span>Typescript</span>
             <span>
               <img src={ts} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Express</span>
             <span>
               <img src={express} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Git</span>
             <span>
               <img src={git} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Node</span>
             <span>
               <img src={node} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Figma</span>
             <span>
               <img src={figma} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>React</span>
             <span>
               <img src={react} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Sass</span>
             <span>
               <img src={sass} alt="" />
             </span>
           </li>
-          <li>
+          <li className="u-btn">
             <span>Mongodb</span>
             <span>
               <img src={mongodb} alt="" />

@@ -9,9 +9,10 @@ const Card: React.FC<any> = (props) => {
 
   return (
     <div
-      className="projects__container__content__card__container__card"
+      className="projects__container__content__card__container__card u-btn"
       id="card"
       data-before-content={cardItem.name}
+      onClick={() => window.open(cardItem.link, "_blank")}
     >
       <div className="projects__container__content__card__container__card__details">
         {cardItem.description}
@@ -24,8 +25,8 @@ const Card: React.FC<any> = (props) => {
         className="u-text-decoration-none u-btn"
         target="_blank"
       >
-        <span>Have a look</span>
-        <img src={roundArrow} alt="arrow" />
+        <span className="u-btn">Visit</span>
+        <img src={roundArrow} alt="" />
       </a>
     </div>
   );

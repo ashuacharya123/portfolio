@@ -119,7 +119,9 @@ const Hero: React.FC<{}> = () => {
 
         <div
           className="hero__container__content__whee "
-          id={move >= 3 ? "u-bg-black" : ""}
+          id={
+            move >= 3 && move < 4 ? "u-bg-img" : move >= 4 ? "u-bg-black" : ""
+          }
         >
           <div className="hero__container__content__wheel" id={num}>
             <li className="list">5</li>
@@ -136,7 +138,11 @@ const Hero: React.FC<{}> = () => {
           <li>Full stack web developer</li>
           <li>UI UX designer</li>
         </p>
-        <a href="#projects" className="u-text-decoration-none u-ml" id="a">
+        <a
+          href="#projects"
+          className="u-text-decoration-none u-ml u-btn"
+          id="a"
+        >
           <span>Have a look</span>
           <img src={roundArrow} alt="arrow" />
         </a>

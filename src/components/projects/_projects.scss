@@ -4,6 +4,8 @@
     height: 100%;
     background-attachment: fixed;
     background-image: url(../../assets/mobile/projects.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-y: scroll;
     &__heading {
       padding-top: 13rem;
@@ -53,12 +55,12 @@
           background-image: url(../../assets/projects/semiCircle.svg);
           background-position: center;
           width: 100%;
-          top: -2.5rem;
-          height: 20%;
+          top: -3rem;
+          height: 25%;
           position: absolute;
           background-repeat: no-repeat;
           color: black;
-          padding-top: 1rem;
+          padding-top: 1.65rem;
         }
         &__details {
           padding-top: 8rem;
