@@ -72,7 +72,8 @@ body {
       }
       &:nth-child(5) {
         background-attachment: fixed;
-        background-image: url(../assets/mobile/contact.png);
+        background-image: url(../assets/mobile/skills.png);
+        min-height: 100vh;
       }
     }
   }

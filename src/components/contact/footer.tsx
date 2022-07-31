@@ -6,7 +6,7 @@ const Footer: React.FC<{}> = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="footer__container">
+    <div className="footer__container u-ml">
       <div className="footer__container__content">
         <h2 className="footer__container__content__heading">Ashish Acharya</h2>
         <p className="footer__container__content__paragraph">

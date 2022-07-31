@@ -11,7 +11,10 @@ const Contact: React.FC<{}> = () => {
       <div className="contact__container__content">
         <div className="contact__container__content__contact__section">
           <h2 className="contact__container__content__heading">Let’s talk</h2>
-          <form action="" className="contact__container__content__form">
+          <form
+            action=""
+            className="contact__container__content__form u-ml u-mr"
+          >
             <div className="contact__container__content__form__content">
               <div className="contact__container__content__form__content__upper">
                 <ul>
@@ -28,10 +31,15 @@ const Contact: React.FC<{}> = () => {
                     <input type="text" />
                   </li>
                 </ul>
-                <a href="#home" className="u-btn">
+                <button
+                  className="u-btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
                   <span>Connect</span>
                   <img src={roundArrow} alt="arrow" />
-                </a>
+                </button>
               </div>
               <div className="contact__container__content__form__content__lower">
                 <div className="contact__container__content__form__content__lower__links">
