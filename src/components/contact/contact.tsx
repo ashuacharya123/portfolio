@@ -37,6 +37,7 @@ const Contact: React.FC<{}> = () => {
                   onClick={(e) => {
                     e.preventDefault();
                   }}
+                  type="submit"
                 >
                   <span>Connect</span>
                   <img src={roundArrow} alt="arrow" />
