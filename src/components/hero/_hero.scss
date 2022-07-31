@@ -166,15 +166,15 @@ $bg__hero: #0e0e0e;
   top: 0;
   z-index: 2;
   background-color: black;
-  background-image: url(../../assets/bg.jpg);
+  background-image: url(../../assets/bg.png);
   background-repeat: no-repeat;
 
-  background-size: contain;
+  background-size: cover;
   transition: all 1.5s;
   h3 {
     font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 20rem;
+    margin-top: 18rem;
     text-align: center;
   }
 
