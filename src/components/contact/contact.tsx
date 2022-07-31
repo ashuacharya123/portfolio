@@ -21,22 +21,22 @@ const Contact: React.FC<{}> = () => {
                 <ul>
                   <li>
                     <span>Name</span>
-                    <input type="text" />
+                    <input type="text" name="name" />
                   </li>
                   <li>
                     <span>Email</span>
-                    <input type="email" />
+                    <input type="email" name="email" />
                   </li>
                   <li>
                     <span>Message</span>
-                    <input type="text" />
+                    <input type="text" name="message" />
                   </li>
                 </ul>
                 <button
                   className="u-btn"
-                  onClick={(e) => {
-                    e.preventDefault();
-                  }}
+                  // onClick={(e) => {
+                  //   e.preventDefault();
+                  // }}
                   type="submit"
                 >
                   <span>Connect</span>
