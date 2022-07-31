@@ -58,7 +58,9 @@ const Hero: React.FC<{}> = () => {
           <img src={logo} alt="" />
         </div>
         <div className="audio-enable" id={dn ? "dn" : ""}>
-          <h3 className="audio-enable__text">Continue with sound ?</h3>
+          <h3 className="audio-enable__text">
+            Continue with <span>sound</span> ?
+          </h3>
           <div>
             <button
               className="u-btn"

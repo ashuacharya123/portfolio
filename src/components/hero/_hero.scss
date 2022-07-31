@@ -165,21 +165,32 @@ $bg__hero: #0e0e0e;
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: black;
+  background-color: #eee;
   background-image: url(../../assets/bg.png);
   background-repeat: no-repeat;
 
   background-size: cover;
   transition: all 1.5s;
+
+  &__text {
+    span {
+      // font-size: 2rem;
+      color: rgb(231, 84, 84);
+      animation: on-off2 2s infinite;
+      font-weight: 800;
+    }
+  }
   h3 {
     font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 18rem;
+    margin-top: 16rem;
     text-align: center;
+    color: white;
+    // background: black;
   }
 
   div {
-    margin-top: 2rem;
+    margin-top: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -187,11 +198,40 @@ $bg__hero: #0e0e0e;
 
     button {
       border: none;
-      background: #ffffff;
+      background: white;
       padding: 1rem 3rem 1rem 3rem;
       font-family: inherit;
       font-size: 1rem;
       border-radius: 0.5rem;
+      color: black;
+      font-weight: 500;
+      animation: on-off3 1s infinite;
     }
+  }
+}
+@keyframes on-off2 {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(231, 84, 84);
+  }
+  50% {
+    color: rgb(231, 84, 84);
+    -webkit-text-stroke: 1px transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(231, 84, 84);
+  }
+}
+@keyframes on-off3 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1-0.02);
+  }
+  100% {
+    transform: scale(1);
   }
 }
