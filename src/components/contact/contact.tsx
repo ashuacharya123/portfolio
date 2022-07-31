@@ -12,7 +12,8 @@ const Contact: React.FC<{}> = () => {
         <div className="contact__container__content__contact__section">
           <h2 className="contact__container__content__heading">Let’s talk</h2>
           <form
-            action=""
+            action="https://formsubmit.co/ashuacharya622@gmail.com"
+            method="POST"
             className="contact__container__content__form u-ml u-mr"
           >
             <div className="contact__container__content__form__content">
