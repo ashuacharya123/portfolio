@@ -32,8 +32,21 @@
 
     &__me {
       position: absolute;
-      bottom: 5rem;
+      bottom: 4.5rem;
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .about__container {
+    &__content {
+      &__me {
+        bottom: 0rem;
+        @media screen and (max-height: 625px) {
+          bottom: -2rem;
+        }
+      }
     }
   }
 }

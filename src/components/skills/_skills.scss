@@ -11,6 +11,12 @@
       -webkit-text-stroke: 1px white;
       animation: on-off 5s infinite;
       font-size: 2rem;
+      @media screen and (max-width: 380px) {
+        top: 49%;
+      }
+      @media screen and (max-height: 675px) {
+        top: 49%;
+      }
     }
 
     ul {
@@ -23,6 +29,10 @@
       left: 50%;
       top: 75%;
       transform: translate(-50%, -50%) rotate(0deg);
+
+      @media screen and (max-width: 380px) {
+        top: 80%;
+      }
 
       li {
         display: flex;
