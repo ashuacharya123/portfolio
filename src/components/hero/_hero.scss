@@ -107,6 +107,13 @@ $bg__hero: #0e0e0e;
       font-size: 4.5rem;
       line-height: 4rem;
 
+      @media screen and (min-width: 540px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (min-width: 620px) {
+        font-size: 4rem;
+      }
+
       span {
         display: block;
         font-size: 1.3rem;

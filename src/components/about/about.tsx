@@ -8,7 +8,7 @@ const About: React.FC<{}> = () => {
         <h2 className="u-ml">
           <span>Ashish Acharya,</span>a computer science student
         </h2>
-        <h3 className="u-ml">
+        <h3 className="u-ml u-mr">
           Currently studing Csit in Butwal Multiple Campus in 3rd semister.
         </h3>
         <h4 className="u-mr">Code</h4>
