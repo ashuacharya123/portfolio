@@ -65,6 +65,14 @@ $bg__hero: #0e0e0e;
         text-align: center;
         font-size: 0.8rem;
         font-weight: 600;
+        transition: all 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+        &:active,
+        &:target {
+          transform: scale(0.9);
+        }
       }
     }
 
