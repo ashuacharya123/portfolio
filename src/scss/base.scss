@@ -78,12 +78,12 @@ body {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 380px) and (max-width: 500px) {
   html {
     font-size: 80%;
   }
 }
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 780px) and (max-width: 500px) {
   html {
     font-size: 80%;
   }
