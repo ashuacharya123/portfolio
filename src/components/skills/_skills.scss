@@ -47,6 +47,7 @@
 }
 
 .skills__container {
+  overflow-x: hidden;
   &__content {
     height: 100%;
     position: relative;
