@@ -268,10 +268,6 @@
 
   .footer__container {
     &__content {
-      background-image: url(../../assets/pc/footer.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-
       margin-top: 5rem;
       &__heading {
         animation: on-off 3s infinite;

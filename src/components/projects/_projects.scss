@@ -126,7 +126,7 @@
     }
   }
 }
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 750px) {
   .projects__container {
     &__content {
       &__card__container {
@@ -136,6 +136,23 @@
             left: -2.1rem;
             top: -2.8rem;
             width: 124%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+  .projects__container {
+    &__content {
+      &__card__container {
+        &__card {
+          &::before {
+            transform: scale(0.75);
+            left: -3rem;
+            top: -3.5rem;
+            width: 134%;
           }
         }
       }

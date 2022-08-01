@@ -8,7 +8,6 @@
     background-image: url(../../assets/mobile/about.png);
     position: relative;
     overflow-x: hidden;
-    overflow-y: scroll;
 
     h2 {
       padding-top: 14rem;
@@ -84,12 +83,33 @@
 
       &__me {
         position: absolute;
-        bottom: -3rem;
+        bottom: -2.5rem;
         right: -5rem;
         transform: scale(0.9);
         img {
           width: 100%;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1390px) and (min-width: 768px) {
+  .about__container {
+    &__content {
+      &__me {
+        scale: 0.6;
+        bottom: -10rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 768px) {
+  .about__container {
+    &__content {
+      &__me {
+        scale: 0.4;
+        bottom: -15rem;
       }
     }
   }
