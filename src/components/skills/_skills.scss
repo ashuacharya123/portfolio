@@ -133,16 +133,28 @@
 @media screen and (min-width: 600px) {
   .skills__container {
     &__content {
-      width: 60%;
+      width: 100%;
       margin-inline: auto;
-      transform: rotate(0deg);
-      animation: rotate 10s linear infinite;
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+
       height: 100%;
       position: relative;
+
       &__heading {
         animation: rotate2 10s linear infinite;
         left: 50%;
         top: 50%;
+      }
+
+      &__content {
+        transform: rotate(0deg);
+        animation: rotate 10s linear infinite;
+        height: 50%;
+        width: 50%;
+        position: relative;
       }
 
       ul {
@@ -155,7 +167,7 @@
         display: block;
 
         left: 50%;
-        top: 45%;
+        top: 40%;
         transform: translate(-50%, -50%) rotate(0deg);
 
         @media screen and (max-width: 380px) {
@@ -165,6 +177,7 @@
           span {
             &:nth-last-of-type(2) {
               animation: rotate2 3s linear infinite;
+              margin-bottom: -2rem;
             }
           }
         }
