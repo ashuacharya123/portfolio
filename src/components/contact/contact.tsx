@@ -32,13 +32,7 @@ const Contact: React.FC<{}> = () => {
                     <input type="text" name="message" />
                   </li>
                 </ul>
-                <button
-                  className="u-btn"
-                  // onClick={(e) => {
-                  //   e.preventDefault();
-                  // }}
-                  type="submit"
-                >
+                <button className="u-btn" type="submit">
                   <span>Connect</span>
                   <img src={roundArrow} alt="arrow" />
                 </button>

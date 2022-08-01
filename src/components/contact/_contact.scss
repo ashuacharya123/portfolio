@@ -169,3 +169,159 @@
     -webkit-text-stroke: 1px white;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .contact__container {
+    overflow-y: scroll;
+    &__content {
+      &__contact__section {
+        padding-top: 10rem;
+
+        background-image: url(../../assets/pc/contact.png);
+        background-position-y: 0rem;
+      }
+      &__heading {
+        font-size: 8rem;
+      }
+      &__form {
+        border: 1px solid white;
+        width: 65%;
+        margin-top: 1rem;
+        &__content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row-reverse;
+          width: 80%;
+          margin-inline: auto;
+          &__upper {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+            ul {
+              width: 100%;
+              list-style: none;
+              li {
+                margin-top: 2rem;
+                span {
+                  display: block;
+                  margin-bottom: 1rem;
+                  font-weight: 300;
+                }
+                input {
+                  width: 100%;
+                  border: none;
+                  background-color: transparent;
+                  border-bottom: 1px solid white;
+                  height: 2rem;
+                  color: white;
+                  font-size: 1.1rem;
+                  padding-left: 0.5rem;
+                }
+              }
+            }
+            button {
+              margin-top: 3rem;
+              color: black;
+              text-decoration: none;
+              background-color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              padding: 0.6rem 0 0.6rem 0;
+              border: none;
+              border-radius: 0.5rem;
+              font-family: inherit;
+              font-weight: 400;
+              font-size: 1rem;
+
+              img {
+                transform: scale(0.65);
+              }
+            }
+          }
+          &__lower {
+            margin-bottom: 3rem;
+            align-self: center;
+            width: 80%;
+            &__links {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              aspect-ratio: 1;
+              border: 1px solid white;
+              border-radius: 50%;
+              width: 70%;
+              margin-top: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__container {
+    &__content {
+      background-image: url(../../assets/pc/footer.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      margin-top: 5rem;
+      &__heading {
+        animation: on-off 3s infinite;
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+      p {
+        font-size: 0.65rem;
+      }
+      &__box {
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        border: 1px solid white;
+        width: 30%;
+
+        &__heading {
+          font-size: 1.2rem;
+          margin-left: 1rem;
+          margin-bottom: 0.6rem;
+          margin-top: 1rem;
+        }
+
+        &__email {
+          margin-left: 1rem;
+          display: flex;
+          align-items: center;
+          img {
+            transform: scale(1.2);
+            margin-right: 0.5rem;
+          }
+          span {
+            font-size: 0.8rem;
+          }
+        }
+
+        &__phone {
+          display: flex;
+          align-items: center;
+          margin-left: 1rem;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
+          img {
+            transform: scale(1.2);
+            margin-right: 0.5rem;
+          }
+          span {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
