@@ -22,6 +22,7 @@ $color__wheel: #f1f1f1;
     );
 
     $angle: (360 / $item-count);
+
     $rot: 45 * -2;
 
     @for $i from 1 through $item-count {
@@ -31,6 +32,10 @@ $color__wheel: #f1f1f1;
           rotate($rot * -1deg)
           translateX(0rem)
           translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
       }
 
       $rot: $rot + $angle;
@@ -69,6 +74,10 @@ $color__wheel: #f1f1f1;
           rotate($rot * -1deg)
           translateX(0rem)
           translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
       }
 
       $rot: $rot + $angle;
@@ -106,6 +115,10 @@ $color__wheel: #f1f1f1;
           rotate($rot * -1deg)
           translateX(0rem)
           translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
       }
 
       $rot: $rot + $angle;
@@ -143,6 +156,10 @@ $color__wheel: #f1f1f1;
           rotate($rot * -1deg)
           translateX(0rem)
           translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
       }
 
       $rot: $rot + $angle;
@@ -180,6 +197,222 @@ $color__wheel: #f1f1f1;
           rotate($rot * -1deg)
           translateX(0rem)
           translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+//pc
+
+@mixin on-circlePc($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    $theme-colors: (
+      "primary": #00695f,
+      "info": #00a59b,
+    );
+
+    $angle: (360 / $item-count);
+
+    $rot: 45 * 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2+1)
+          rotate($rot * -1deg)
+          translateX(0rem)
+          translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+@mixin on-circlePc3($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    $theme-colors: (
+      "primary": #00695f,
+      "info": #00a59b,
+    );
+
+    $angle: (360 / $item-count);
+    $rot: 45 * 2;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2+1)
+          rotate($rot * -1deg)
+          translateX(0rem)
+          translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+@mixin on-circlePc2($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    $theme-colors: (
+      "primary": #00695f,
+      "info": #00a59b,
+    );
+
+    $angle: (360 / $item-count);
+
+    $rot: 45 * 1;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2+1)
+          rotate($rot * -1deg)
+          translateX(0rem)
+          translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+@mixin on-circlePc4($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    $theme-colors: (
+      "primary": #00695f,
+      "info": #00a59b,
+    );
+
+    $angle: (360 / $item-count);
+    $rot: 45 * 3;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2+1)
+          rotate($rot * -1deg)
+          translateX(0rem)
+          translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+@mixin on-circlePc5($item-count, $circle-size, $item-size) {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+    $theme-colors: (
+      "primary": #00695f,
+      "info": #00a59b,
+    );
+
+    $angle: (360 / $item-count);
+
+    $rot: 45 * 4;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2+1)
+          rotate($rot * -1deg)
+          translateX(0rem)
+          translateY(3.5rem);
+        @media screen and (min-width: 768px) {
+          transform: rotate($rot * 1deg) translate($circle-size / 2+3)
+            rotate($rot * -1deg) translateX(0rem) translateY(2rem);
+        }
       }
 
       $rot: $rot + $angle;
@@ -190,6 +423,9 @@ $color__wheel: #f1f1f1;
 #one {
   @include on-circle($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
   text-align: center;
+  @media screen and (min-width: 768px) {
+    @include on-circlePc($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
+  }
 
   li {
     &:nth-of-type(5) {
@@ -205,6 +441,13 @@ $color__wheel: #f1f1f1;
 #two {
   @include on-circle2($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
   text-align: center;
+  @media screen and (min-width: 768px) {
+    @include on-circlePc2(
+      $item-count: 8,
+      $circle-size: 18rem,
+      $item-size: 6rem
+    );
+  }
 
   li {
     &:nth-of-type(4) {
@@ -219,6 +462,13 @@ $color__wheel: #f1f1f1;
 #three {
   @include on-circle3($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
   text-align: center;
+  @media screen and (min-width: 768px) {
+    @include on-circlePc3(
+      $item-count: 8,
+      $circle-size: 18rem,
+      $item-size: 6rem
+    );
+  }
 
   li {
     &:nth-of-type(3) {
@@ -233,6 +483,13 @@ $color__wheel: #f1f1f1;
 #four {
   @include on-circle4($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
   text-align: center;
+  @media screen and (min-width: 768px) {
+    @include on-circlePc4(
+      $item-count: 8,
+      $circle-size: 18rem,
+      $item-size: 6rem
+    );
+  }
 
   li {
     &:nth-of-type(2) {
@@ -246,6 +503,13 @@ $color__wheel: #f1f1f1;
 }
 #five {
   @include on-circle5($item-count: 8, $circle-size: 18rem, $item-size: 6rem);
+  @media screen and (min-width: 768px) {
+    @include on-circlePc5(
+      $item-count: 8,
+      $circle-size: 18rem,
+      $item-size: 6rem
+    );
+  }
   text-align: center;
 
   li {

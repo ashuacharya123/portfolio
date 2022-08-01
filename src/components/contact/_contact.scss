@@ -81,8 +81,17 @@
           &__links {
             display: flex;
             align-items: center;
+
             a {
               margin-right: 1rem;
+              transition: all 0.2s;
+              &:hover {
+                transform: scale(1.1);
+              }
+              &:active,
+              &:target {
+                transform: scale(0.9);
+              }
             }
           }
         }

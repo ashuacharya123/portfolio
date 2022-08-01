@@ -14,8 +14,14 @@ const Hero: React.FC<{}> = () => {
   const [num, setNum] = useState<string>("five");
   const [dn, setDn] = useState<boolean>(true);
   const [move, setMove] = useState<number>(0);
+  const [width, setWidth] = useState<number>(window.visualViewport.width);
 
   const [sound, setSound] = useState<boolean>(true);
+
+  const resizeHandler = () => {
+    setWidth(window.visualViewport.width);
+  };
+  window.visualViewport.addEventListener("resize", resizeHandler);
 
   useLayoutEffect(() => {
     const app: any = document.querySelector(".App__container");
@@ -83,7 +89,16 @@ const Hero: React.FC<{}> = () => {
         </div>
 
         <div className="hero__container__content__menu">
-          <a href="#home" className="u-ml" id={num === "one" ? "active" : ""}>
+          <a href="#home" id={width < 768 ? "u-dn" : ""}>
+            <div>
+              <img src={logo} alt="logo" />
+            </div>
+          </a>
+          <a
+            href="#home"
+            className={width < 768 ? "u-ml" : ""}
+            id={num === "one" ? "active" : ""}
+          >
             <div>
               <img src={home} alt="home" />
             </div>
@@ -109,7 +124,7 @@ const Hero: React.FC<{}> = () => {
           </a>
           <a
             href="#contact"
-            className="u-mr"
+            className={width < 768 ? "u-mr" : ""}
             id={num === "five" ? "active" : ""}
           >
             <div className="">
@@ -117,12 +132,27 @@ const Hero: React.FC<{}> = () => {
             </div>
             <p>Contact</p>
           </a>
+          <div className="u-links" id={width < 768 ? "u-dn" : ""}>
+            <a href="https://www.facebook.com/iamashuacharya" target="_blank">
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href="https://github.com/ashuacharya123" target="_blank">
+              <img src={github} alt="github" />
+            </a>
+            <a href="https://www.instagram.com/iamashuacharya/" target="_blank">
+              <img src={instagram} alt="instagram" />
+            </a>
+          </div>
         </div>
 
         <div
           className="hero__container__content__whee "
           id={
-            move >= 3 && move < 4 ? "u-bg-img" : move >= 4 ? "u-bg-black" : ""
+            move >= 3 && move < 4 && width < 768
+              ? "u-bg-img"
+              : move >= 4 && width < 768
+              ? "u-bg-black"
+              : ""
           }
         >
           <div className="hero__container__content__wheel" id={num}>

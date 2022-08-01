@@ -1,12 +1,32 @@
 .u-ml {
   margin-left: 2rem;
+  @media screen and (min-width: 768px) {
+    margin-left: 15rem;
+  }
 }
 .u-mr {
   margin-right: 2rem;
+  @media screen and (min-width: 768px) {
+    margin-left: 15rem;
+  }
+}
+
+.u-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .u-text-decoration-none {
   text-decoration: none;
+}
+
+#u-dn {
+  display: none;
+}
+.u-dn {
+  display: none;
 }
 
 .u-btn {

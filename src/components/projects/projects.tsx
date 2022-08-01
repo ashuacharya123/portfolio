@@ -8,9 +8,7 @@ const Projects: React.FC<{}> = () => {
   return (
     <div className="container projects__container" id="projects">
       <div className="projects__container__content">
-        <div className="projects__container__content__heading u-ml u-mr">
-          Projects
-        </div>
+        <div className="projects__container__content__heading ">Projects</div>
         <div className="projects__container__content__card__container">
           {length.map((d) => {
             return <Card key={d} props={d} />;
