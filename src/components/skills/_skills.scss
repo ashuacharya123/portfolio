@@ -65,7 +65,13 @@
         top: 49%;
       }
       @media screen and (max-height: 675px) {
-        top: 49%;
+        top: 48%;
+      }
+      @media screen and (max-height: 628px) {
+        top: 48%;
+      }
+      @media screen and (max-height: 600px) {
+        top: 50%;
       }
     }
 
