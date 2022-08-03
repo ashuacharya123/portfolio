@@ -13,11 +13,11 @@ const About: React.FC<{}> = () => {
     <div className="container about__container" id="about">
       <div className="about__container__content">
         <h2 className="u-ml">
-          <span>Ashish Acharya,</span>a computer science student
+          <span>Ashish Acharya,</span>a Computer Science student
         </h2>
         <h3 className="u-ml u-mr">
-          Currently studing Csit in Butwal Multiple{" "}
-          <span>Campus in 3rd semister.</span>
+          Currently, studying CSIT at Butwal Multiple{" "}
+          <span>Campus in 3rd semester.</span>
         </h3>
         <h4 className="u-mr">Code</h4>
         <div className="about__container__content__me">
