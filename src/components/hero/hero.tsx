@@ -1,4 +1,5 @@
 import React, { useState, useLayoutEffect, useEffect } from "react";
+import * as Bowser from "bowser";
 import logo from "../../assets/Logo.svg";
 import roundArrow from "../../assets/arrow-right-circle.svg";
 import facebook from "../../assets/facebook.svg";
@@ -11,6 +12,8 @@ import skills from "../../assets/skills.svg";
 import contact from "../../assets/contact.svg";
 
 const Hero: React.FC<{}> = () => {
+  const browser = Bowser.getParser(window.navigator.userAgent);
+
   const [num, setNum] = useState<string>("five");
   const [dn, setDn] = useState<boolean>(true);
   const [move, setMove] = useState<number>(0);
@@ -57,9 +60,16 @@ const Hero: React.FC<{}> = () => {
     }, 500);
   }, []);
 
+  const style = {
+    backgroundAttachment: "fixed",
+  };
+  if (browser.getBrowser().name === "Safari") {
+    style.backgroundAttachment = "scroll";
+  }
+
   return (
     <div className="container hero__container" id="num">
-      <div className="hero__container__content" id="home">
+      <div className="hero__container__content" id="home" style={style}>
         <div className="hero__container__content__logo">
           <img src={logo} alt="" />
         </div>
@@ -69,7 +79,7 @@ const Hero: React.FC<{}> = () => {
           </h3>
           <div>
             <button
-              className="u-btn"
+              className="u-btn "
               onClick={() => {
                 setSound(false);
                 setDn(true);

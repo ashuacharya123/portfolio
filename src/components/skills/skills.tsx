@@ -1,3 +1,4 @@
+import * as Bowser from "bowser";
 import React from "react";
 import ts from "../../assets/skills/typescript.svg";
 import express from "../../assets/skills/express.svg";
@@ -9,9 +10,17 @@ import sass from "../../assets/skills/sass.svg";
 import mongodb from "../../assets/skills/mongodb.svg";
 
 const Skills: React.FC<{}> = () => {
+  const browser = Bowser.getParser(window.navigator.userAgent);
+
+  const style = {
+    backgroundAttachment: "fixed",
+  };
+  if (browser.getBrowser().name === "Safari") {
+    style.backgroundAttachment = "scroll";
+  }
   return (
     <div className="container skills__container" id="skills">
-      <div className="skills__container__content">
+      <div className="skills__container__content" style={style}>
         <div className="skills__container__content__content">
           <h2 className="skills__container__content__heading">My skills</h2>
           <ul>

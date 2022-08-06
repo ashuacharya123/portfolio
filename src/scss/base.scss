@@ -30,6 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 .App {
@@ -48,7 +49,7 @@ body {
 
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      // background-attachment: fixed;
       @media screen and (min-width: 768px) {
         // margin-left: 10rem;
       }
@@ -62,7 +63,7 @@ body {
       &:nth-child(1) {
       }
       &:nth-child(3) {
-        background-attachment: fixed;
+        // background-attachment: fixed;
         background-image: url(../assets/mobile/blur.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -70,7 +71,7 @@ body {
       &:nth-child(4) {
       }
       &:nth-child(5) {
-        background-attachment: fixed;
+        // background-attachment: fixed;
         background-image: url(../assets/mobile/skills.png);
         min-height: 100vh;
       }

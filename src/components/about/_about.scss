@@ -2,12 +2,14 @@
   &__content {
     width: 100%;
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     height: 100%;
     background-repeat: no-repeat;
-    background-image: url(../../assets/mobile/about.png);
     position: relative;
     overflow-x: hidden;
+    background-image: url(../../assets/mobile/about.png);
+    overflow-y: hidden;
+    background-color: black;
 
     h2 {
       padding-top: 14rem;
