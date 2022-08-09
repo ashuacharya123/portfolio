@@ -8,6 +8,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow-y: scroll;
+
+    @media screen and (min-width: 1050px) {
+      background-image: url(../../assets/pc/projects.png);
+    }
     &__heading {
       padding-top: 13rem;
       font-size: 5rem;
