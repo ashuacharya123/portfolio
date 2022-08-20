@@ -166,11 +166,31 @@ const Hero: React.FC<{}> = () => {
           }
         >
           <div className="hero__container__content__wheel" id={num}>
-            <li className="list">5</li>
-            <li className="list">4</li>
-            <li className="list">3</li>
-            <li className="list">2</li>
-            <li className="list">1</li>
+            <li className="list u-tdn">
+              <a href="#contact" className="u-tdn">
+                5
+              </a>
+            </li>
+            <li className="list">
+              <a href="#projects" className="u-tdn">
+                4
+              </a>{" "}
+            </li>
+            <li className="list">
+              <a href="#skills" className="u-tdn">
+                3
+              </a>{" "}
+            </li>
+            <li className="list">
+              <a href="#about" className="u-tdn">
+                2
+              </a>{" "}
+            </li>
+            <li className="list">
+              <a href="#home" className="u-tdn">
+                1
+              </a>{" "}
+            </li>
           </div>
         </div>
         <h1 className="hero__container__content__heading u-ml">
