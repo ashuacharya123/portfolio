@@ -7,7 +7,7 @@ export const data = {
   },
   1: {
     name: "Paintings",
-    description: " Jam your walls with some creative paintings",
+    description: " Jam your walls with creative paintings",
     image: require("../../assets/projects/paintings.png"),
     link: "https://paintings-ashuacharya123.vercel.app/",
   },
