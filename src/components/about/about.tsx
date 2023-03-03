@@ -27,7 +27,7 @@ const About: React.FC<{}> = () => {
         </h2>
         <h3 className="u-ml u-mr">
           Currently, studying CSIT at Butwal Multiple{" "}
-          <span>Campus in 3rd semester.</span>
+          <span>Campus in 4th semester.</span>
         </h3>
         <h4 className="u-mr">Code</h4>
         <div className="about__container__content__me">
